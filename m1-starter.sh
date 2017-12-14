@@ -1,9 +1,10 @@
 #! /bin/sh
 #
-# start.sh
+# m1-starter.sh
 # Copyright (C) 2017 stcarolas <stcarolas@homeGround>
 #
 # Distributed under terms of the MIT license.
 #
 
-exec $(m1 $(m1 | fzf))
+export command=$(m1 | fzf)
+$(m1 $command)

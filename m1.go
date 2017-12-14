@@ -38,7 +38,7 @@ func (menu *menu) loadMenu() {
 }
 
 func main() {
-  menu := menu{configPath:DEFAULT_CONFIG_PATH}
+  menu := menu{ configPath:DEFAULT_CONFIG_PATH }
   menu.loadMenu()
   if len(os.Args) == 1 {
     for name := range menu.actions {
