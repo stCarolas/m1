@@ -8,5 +8,7 @@
 
 
 m1_actions | m1
-export command=$(cat /tmp/m1)
-$(m1 $command)
+local command=$(cat /tmp/m1)
+if [ -n "$target" ]; then
+  $(m1_actions $command)
+fi
