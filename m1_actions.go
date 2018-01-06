@@ -8,7 +8,7 @@ import (
     "strings"
 )
 
-const  DEFAULT_CONFIG_PATH string = ".actions"
+const  DEFAULT_CONFIG_PATH string = "~/.config/m1/actions"
 
 type menu struct {
   configPath string
